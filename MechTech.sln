@@ -1,0 +1,155 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MechTech", "MechTech\MechTech.csproj", "{C4F94354-3C8D-4545-B14A-A239CA2B84A2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0A5E2613-089F-4F4A-A6EF-EF87219E1632} = {0A5E2613-089F-4F4A-A6EF-EF87219E1632}
+		{E836081D-DA27-424C-A870-3DB0353E6DA4} = {E836081D-DA27-424C-A870-3DB0353E6DA4}
+		{87FEA72B-12D3-4A21-8740-C7F8D655CC7D} = {87FEA72B-12D3-4A21-8740-C7F8D655CC7D}
+		{E3DF1041-4F4C-4680-8CB5-9927AC21832E} = {E3DF1041-4F4C-4680-8CB5-9927AC21832E}
+		{E42C925E-6DC9-4B51-9979-C02F69D08AAD} = {E42C925E-6DC9-4B51-9979-C02F69D08AAD}
+		{CE872692-42BA-4862-ABB9-918CAD2E6169} = {CE872692-42BA-4862-ABB9-918CAD2E6169}
+		{8FF99FC7-4ECA-4DDB-AAEC-1F37411BD2AD} = {8FF99FC7-4ECA-4DDB-AAEC-1F37411BD2AD}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MechTech.Util", "Util\MechTech.Util.csproj", "{18299A7D-BD31-4869-8464-55B8DB033676}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MechTech.Entities", "Entities\MechTech.Entities.csproj", "{93AC343F-E837-4D66-BCB4-EFFB0A4B4A81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MechTech.UI.Cadastros", "UI\Cadastros\MechTech.UI.Cadastros.csproj", "{CE872692-42BA-4862-ABB9-918CAD2E6169}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MechTech.Business", "Business\MechTech.Business.csproj", "{8FF99FC7-4ECA-4DDB-AAEC-1F37411BD2AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MechTech.Data", "Data\MechTech.Data.csproj", "{E836081D-DA27-424C-A870-3DB0353E6DA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MechTech.Gateway", "Gateway\MechTech.Gateway.csproj", "{87FEA72B-12D3-4A21-8740-C7F8D655CC7D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MechTech.Interfaces", "Interfaces\MechTech.Interfaces.csproj", "{E3DF1041-4F4C-4680-8CB5-9927AC21832E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MechTech.UI.Utilitarios", "UI\Utilitarios\MechTech.UI.Utilitarios.csproj", "{589A117A-0293-4A85-A530-3C71047F525E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MechTech.UI.Vendas", "UI\Vendas\MechTech.UI.Vendas.csproj", "{E42C925E-6DC9-4B51-9979-C02F69D08AAD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E836081D-DA27-424C-A870-3DB0353E6DA4} = {E836081D-DA27-424C-A870-3DB0353E6DA4}
+		{87FEA72B-12D3-4A21-8740-C7F8D655CC7D} = {87FEA72B-12D3-4A21-8740-C7F8D655CC7D}
+		{93AC343F-E837-4D66-BCB4-EFFB0A4B4A81} = {93AC343F-E837-4D66-BCB4-EFFB0A4B4A81}
+		{E3DF1041-4F4C-4680-8CB5-9927AC21832E} = {E3DF1041-4F4C-4680-8CB5-9927AC21832E}
+		{8FF99FC7-4ECA-4DDB-AAEC-1F37411BD2AD} = {8FF99FC7-4ECA-4DDB-AAEC-1F37411BD2AD}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MechTech.Atualizacao", "Atualizacao\MechTech.Atualizacao.csproj", "{44297B76-3B82-4DA7-BD83-3CBA95DF39BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MechTech.Atalho", "Atalho\MechTech.Atalho.csproj", "{0A5E2613-089F-4F4A-A6EF-EF87219E1632}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MechTech.WebServices", "WebServices\MechTech.WebServices.csproj", "{D6D7A90C-D4C6-41C7-9F2E-6770A212DFA3}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 14
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://acaciomelo.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = MechTech\\MechTech.csproj
+		SccProjectName1 = MechTech
+		SccLocalPath1 = MechTech
+		SccProjectUniqueName2 = Util\\MechTech.Util.csproj
+		SccProjectName2 = Util
+		SccLocalPath2 = Util
+		SccProjectUniqueName3 = Entities\\MechTech.Entities.csproj
+		SccProjectName3 = Entities
+		SccLocalPath3 = Entities
+		SccProjectUniqueName4 = UI\\Cadastros\\MechTech.UI.Cadastros.csproj
+		SccProjectName4 = UI/Cadastros
+		SccLocalPath4 = UI\\Cadastros
+		SccProjectUniqueName5 = Interfaces\\MechTech.Interfaces.csproj
+		SccProjectName5 = Interfaces
+		SccLocalPath5 = Interfaces
+		SccProjectUniqueName6 = Data\\MechTech.Data.csproj
+		SccProjectName6 = Data
+		SccLocalPath6 = Data
+		SccProjectUniqueName7 = Business\\MechTech.Business.csproj
+		SccProjectName7 = Business
+		SccLocalPath7 = Business
+		SccProjectUniqueName8 = Gateway\\MechTech.Gateway.csproj
+		SccProjectName8 = Gateway
+		SccLocalPath8 = Gateway
+		SccProjectUniqueName9 = UI\\Utilitarios\\MechTech.UI.Utilitarios.csproj
+		SccProjectName9 = UI/Utilitarios
+		SccLocalPath9 = UI\\Utilitarios
+		SccProjectUniqueName10 = UI\\Vendas\\MechTech.UI.Vendas.csproj
+		SccProjectName10 = UI/Vendas
+		SccLocalPath10 = UI\\Vendas
+		SccProjectUniqueName11 = Atualizacao\\MechTech.Atualizacao.csproj
+		SccProjectName11 = Atualizacao
+		SccLocalPath11 = Atualizacao
+		SccProjectUniqueName12 = Atalho\\MechTech.Atalho.csproj
+		SccProjectName12 = Atalho
+		SccLocalPath12 = Atalho
+		SccProjectUniqueName13 = WebServices\\MechTech.WebServices.csproj
+		SccProjectName13 = WebServices
+		SccLocalPath13 = WebServices
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C4F94354-3C8D-4545-B14A-A239CA2B84A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4F94354-3C8D-4545-B14A-A239CA2B84A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4F94354-3C8D-4545-B14A-A239CA2B84A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4F94354-3C8D-4545-B14A-A239CA2B84A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18299A7D-BD31-4869-8464-55B8DB033676}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18299A7D-BD31-4869-8464-55B8DB033676}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18299A7D-BD31-4869-8464-55B8DB033676}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18299A7D-BD31-4869-8464-55B8DB033676}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93AC343F-E837-4D66-BCB4-EFFB0A4B4A81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93AC343F-E837-4D66-BCB4-EFFB0A4B4A81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93AC343F-E837-4D66-BCB4-EFFB0A4B4A81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93AC343F-E837-4D66-BCB4-EFFB0A4B4A81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE872692-42BA-4862-ABB9-918CAD2E6169}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE872692-42BA-4862-ABB9-918CAD2E6169}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE872692-42BA-4862-ABB9-918CAD2E6169}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE872692-42BA-4862-ABB9-918CAD2E6169}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FF99FC7-4ECA-4DDB-AAEC-1F37411BD2AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FF99FC7-4ECA-4DDB-AAEC-1F37411BD2AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FF99FC7-4ECA-4DDB-AAEC-1F37411BD2AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FF99FC7-4ECA-4DDB-AAEC-1F37411BD2AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E836081D-DA27-424C-A870-3DB0353E6DA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E836081D-DA27-424C-A870-3DB0353E6DA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E836081D-DA27-424C-A870-3DB0353E6DA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E836081D-DA27-424C-A870-3DB0353E6DA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87FEA72B-12D3-4A21-8740-C7F8D655CC7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87FEA72B-12D3-4A21-8740-C7F8D655CC7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87FEA72B-12D3-4A21-8740-C7F8D655CC7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87FEA72B-12D3-4A21-8740-C7F8D655CC7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3DF1041-4F4C-4680-8CB5-9927AC21832E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3DF1041-4F4C-4680-8CB5-9927AC21832E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3DF1041-4F4C-4680-8CB5-9927AC21832E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3DF1041-4F4C-4680-8CB5-9927AC21832E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{589A117A-0293-4A85-A530-3C71047F525E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{589A117A-0293-4A85-A530-3C71047F525E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{589A117A-0293-4A85-A530-3C71047F525E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{589A117A-0293-4A85-A530-3C71047F525E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E42C925E-6DC9-4B51-9979-C02F69D08AAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E42C925E-6DC9-4B51-9979-C02F69D08AAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E42C925E-6DC9-4B51-9979-C02F69D08AAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E42C925E-6DC9-4B51-9979-C02F69D08AAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44297B76-3B82-4DA7-BD83-3CBA95DF39BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44297B76-3B82-4DA7-BD83-3CBA95DF39BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44297B76-3B82-4DA7-BD83-3CBA95DF39BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44297B76-3B82-4DA7-BD83-3CBA95DF39BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A5E2613-089F-4F4A-A6EF-EF87219E1632}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A5E2613-089F-4F4A-A6EF-EF87219E1632}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A5E2613-089F-4F4A-A6EF-EF87219E1632}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A5E2613-089F-4F4A-A6EF-EF87219E1632}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6D7A90C-D4C6-41C7-9F2E-6770A212DFA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6D7A90C-D4C6-41C7-9F2E-6770A212DFA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6D7A90C-D4C6-41C7-9F2E-6770A212DFA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6D7A90C-D4C6-41C7-9F2E-6770A212DFA3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

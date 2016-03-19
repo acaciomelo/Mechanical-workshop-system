@@ -1,0 +1,528 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CE872692-42BA-4862-ABB9-918CAD2E6169}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MechTech.UI.Cadastros</RootNamespace>
+    <AssemblyName>MechTech.UI.Cadastros</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v14.1, Version=14.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v14.1.Core, Version=14.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v14.1.Core, Version=14.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v14.1, Version=14.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v14.1, Version=14.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v14.1, Version=14.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v14.1, Version=14.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v14.1, Version=14.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v14.1, Version=14.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v14.1.Reporting.Extensions, Version=14.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v14.1, Version=14.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v14.1.Core, Version=14.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmBuscaCEP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscaCEP.Designer.cs">
+      <DependentUpon>frmBuscaCEP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCalendario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCalendario.Designer.cs">
+      <DependentUpon>frmCalendario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGridCategoriaProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGridCategoriaProduto.Designer.cs">
+      <DependentUpon>frmGridCategoriaProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGridCBO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGridCBO.Designer.cs">
+      <DependentUpon>frmGridCBO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGridCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGridCliente.Designer.cs">
+      <DependentUpon>frmGridCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGridDepartamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGridDepartamento.Designer.cs">
+      <DependentUpon>frmGridDepartamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGridEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGridEmpresa.Designer.cs">
+      <DependentUpon>frmGridEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGridFornecedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGridFornecedores.Designer.cs">
+      <DependentUpon>frmGridFornecedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGridFuncao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGridFuncao.Designer.cs">
+      <DependentUpon>frmGridFuncao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGridFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGridFuncionario.Designer.cs">
+      <DependentUpon>frmGridFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGridMunicipio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGridProdutoServico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGridProdutoServico.Designer.cs">
+      <DependentUpon>frmGridProdutoServico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGridResponsavel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGridResponsavel.Designer.cs">
+      <DependentUpon>frmGridResponsavel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGridSecao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGridSecao.Designer.cs">
+      <DependentUpon>frmGridSecao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGridSetor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGridSetor.Designer.cs">
+      <DependentUpon>frmGridSetor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGridVeiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGridVeiculo.Designer.cs">
+      <DependentUpon>frmGridVeiculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGridVeiculosVinc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGridVeiculosVinc.Designer.cs">
+      <DependentUpon>frmGridVeiculosVinc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpdateCalendario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdateCalendario.Designer.cs">
+      <DependentUpon>frmUpdateCalendario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpdateCategoriaProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdateCategoriaProduto.Designer.cs">
+      <DependentUpon>frmUpdateCategoriaProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpdateCBO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdateCBO.Designer.cs">
+      <DependentUpon>frmUpdateCBO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpdateCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdateCliente.Designer.cs">
+      <DependentUpon>frmUpdateCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpdateDepartamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdateDepartamento.Designer.cs">
+      <DependentUpon>frmUpdateDepartamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpdateEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdateEmpresa.Designer.cs">
+      <DependentUpon>frmUpdateEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpdateFornecedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdateFornecedor.Designer.cs">
+      <DependentUpon>frmUpdateFornecedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpdateFuncao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdateFuncao.Designer.cs">
+      <DependentUpon>frmUpdateFuncao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpdateFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdateFuncionario.Designer.cs">
+      <DependentUpon>frmUpdateFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpdateMunicipio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdateProdutoServico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdateProdutoServico.Designer.cs">
+      <DependentUpon>frmUpdateProdutoServico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpdateResponsavel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdateResponsavel.Designer.cs">
+      <DependentUpon>frmUpdateResponsavel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpdateSalario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdateSalario.Designer.cs">
+      <DependentUpon>frmUpdateSalario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpdateSecao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdateSecao.Designer.cs">
+      <DependentUpon>frmUpdateSecao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpdateSetor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdateSetor.Designer.cs">
+      <DependentUpon>frmUpdateSetor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpdateVeiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdateVeiculo.Designer.cs">
+      <DependentUpon>frmUpdateVeiculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVincularVeiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVincularVeiculo.Designer.cs">
+      <DependentUpon>frmVincularVeiculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Splash.cs" />
+    <EmbeddedResource Include="frmBuscaCEP.resx">
+      <DependentUpon>frmBuscaCEP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCalendario.resx">
+      <DependentUpon>frmCalendario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGridCategoriaProduto.resx">
+      <DependentUpon>frmGridCategoriaProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGridCBO.resx">
+      <DependentUpon>frmGridCBO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGridCliente.resx">
+      <DependentUpon>frmGridCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGridDepartamento.resx">
+      <DependentUpon>frmGridDepartamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGridEmpresa.resx">
+      <DependentUpon>frmGridEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGridFornecedores.resx">
+      <DependentUpon>frmGridFornecedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGridFuncao.resx">
+      <DependentUpon>frmGridFuncao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGridFuncionario.resx">
+      <DependentUpon>frmGridFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGridMunicipio.resx">
+      <DependentUpon>frmGridMunicipio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGridProdutoServico.resx">
+      <DependentUpon>frmGridProdutoServico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGridResponsavel.resx">
+      <DependentUpon>frmGridResponsavel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGridSecao.resx">
+      <DependentUpon>frmGridSecao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGridSetor.resx">
+      <DependentUpon>frmGridSetor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGridVeiculo.resx">
+      <DependentUpon>frmGridVeiculo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGridVeiculosVinc.resx">
+      <DependentUpon>frmGridVeiculosVinc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpdateCalendario.resx">
+      <DependentUpon>frmUpdateCalendario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpdateCategoriaProduto.resx">
+      <DependentUpon>frmUpdateCategoriaProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpdateCBO.resx">
+      <DependentUpon>frmUpdateCBO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpdateCliente.resx">
+      <DependentUpon>frmUpdateCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpdateDepartamento.resx">
+      <DependentUpon>frmUpdateDepartamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpdateEmpresa.resx">
+      <DependentUpon>frmUpdateEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpdateFornecedor.resx">
+      <DependentUpon>frmUpdateFornecedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpdateFuncao.resx">
+      <DependentUpon>frmUpdateFuncao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpdateFuncionario.resx">
+      <DependentUpon>frmUpdateFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpdateMunicipio.resx">
+      <DependentUpon>frmUpdateMunicipio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpdateProdutoServico.resx">
+      <DependentUpon>frmUpdateProdutoServico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpdateResponsavel.resx">
+      <DependentUpon>frmUpdateResponsavel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpdateSalario.resx">
+      <DependentUpon>frmUpdateSalario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpdateSecao.resx">
+      <DependentUpon>frmUpdateSecao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpdateSetor.resx">
+      <DependentUpon>frmUpdateSetor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpdateVeiculo.resx">
+      <DependentUpon>frmUpdateVeiculo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVincularVeiculo.resx">
+      <DependentUpon>frmVincularVeiculo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\DataSources\MechTech.Entities.BancoDTO.datasource" />
+    <None Include="Properties\DataSources\MechTech.Entities.BuscaCEPDTO.datasource" />
+    <None Include="Properties\DataSources\MechTech.Entities.CategoriaProdutoDTO.datasource" />
+    <None Include="Properties\DataSources\MechTech.Entities.CBODTO.datasource" />
+    <None Include="Properties\DataSources\MechTech.Entities.ClassifTributariaDTO.datasource" />
+    <None Include="Properties\DataSources\MechTech.Entities.ClienteDTO1.datasource" />
+    <None Include="Properties\DataSources\MechTech.Entities.DepartamentoDTO.datasource" />
+    <None Include="Properties\DataSources\MechTech.Entities.EmpresaDTO.datasource" />
+    <None Include="Properties\DataSources\MechTech.Entities.FeriadoDTO.datasource" />
+    <None Include="Properties\DataSources\MechTech.Entities.FornecedorDTO.datasource" />
+    <None Include="Properties\DataSources\MechTech.Entities.FuncaoDTO.datasource" />
+    <None Include="Properties\DataSources\MechTech.Entities.FuncionarioDTO.datasource" />
+    <None Include="Properties\DataSources\MechTech.Entities.FuncionarioSEDTO.datasource" />
+    <None Include="Properties\DataSources\MechTech.Entities.FuncSalarioDTO.datasource" />
+    <None Include="Properties\DataSources\MechTech.Entities.MunicipioDTO.datasource" />
+    <None Include="Properties\DataSources\MechTech.Entities.NaturezaJuridicaDTO.datasource" />
+    <None Include="Properties\DataSources\MechTech.Entities.PorteDTO.datasource" />
+    <None Include="Properties\DataSources\MechTech.Entities.ProdutoServicoDTO.datasource" />
+    <None Include="Properties\DataSources\MechTech.Entities.ResponsavelDTO.datasource" />
+    <None Include="Properties\DataSources\MechTech.Entities.SalarioTipoDTO.datasource" />
+    <None Include="Properties\DataSources\MechTech.Entities.SecaoDTO.datasource" />
+    <None Include="Properties\DataSources\MechTech.Entities.SetorDTO.datasource" />
+    <None Include="Properties\DataSources\MechTech.Entities.UFDTO.datasource" />
+    <None Include="Properties\DataSources\MechTech.Entities.VeiculoDTO.datasource" />
+    <None Include="Properties\DataSources\MechTech.Entities.VincularVeiculoDTO.datasource" />
+    <None Include="Properties\DataSources\MechTech.Util.Rotina.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Entities\MechTech.Entities.csproj">
+      <Project>{93ac343f-e837-4d66-bcb4-effb0a4b4a81}</Project>
+      <Name>MechTech.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Gateway\MechTech.Gateway.csproj">
+      <Project>{87fea72b-12d3-4a21-8740-c7f8d655cc7d}</Project>
+      <Name>MechTech.Gateway</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Interfaces\MechTech.Interfaces.csproj">
+      <Project>{e3df1041-4f4c-4680-8cb5-9927ac21832e}</Project>
+      <Name>MechTech.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Util\MechTech.Util.csproj">
+      <Project>{18299a7d-bd31-4869-8464-55b8db033676}</Project>
+      <Name>MechTech.Util</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utilitarios\MechTech.UI.Utilitarios.csproj">
+      <Project>{589a117a-0293-4a85-a530-3c71047f525e}</Project>
+      <Name>MechTech.UI.Utilitarios</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ribbon_Find_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apply_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apply_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doublefirst_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doublefirst_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doublelast_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doublelast_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doublenext_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doublenext_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\first_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\first_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\last_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\last_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apply_32x321.png" />
+    <None Include="Resources\apply_16x161.png" />
+    <Content Include="Resources\lock-16x16.jpg" />
+    <None Include="Resources\save_32x32.png" />
+    <None Include="Resources\save_16x16.png" />
+    <None Include="Resources\ok_16.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

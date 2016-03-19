@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{87FEA72B-12D3-4A21-8740-C7F8D655CC7D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MechTech.Gateway</RootNamespace>
+    <AssemblyName>MechTech.Gateway</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BancoGL.cs" />
+    <Compile Include="BuscaCEPGL.cs" />
+    <Compile Include="CategoriaProdutoGL.cs" />
+    <Compile Include="CBOGL.cs" />
+    <Compile Include="ClassifTributariaGL.cs" />
+    <Compile Include="ClienteGL.cs" />
+    <Compile Include="CNAEGL.cs" />
+    <Compile Include="DatabaseStructureGL.cs" />
+    <Compile Include="DepartamentoGL.cs" />
+    <Compile Include="EmpresaGL.cs" />
+    <Compile Include="EstruturaFuncaoGL.cs" />
+    <Compile Include="EstruturaObjetoGL.cs" />
+    <Compile Include="EstruturaTabelaGL.cs" />
+    <Compile Include="FeriadoGL.cs" />
+    <Compile Include="FilialGL.cs" />
+    <Compile Include="FornecedorGL.cs" />
+    <Compile Include="FuncaoGL.cs" />
+    <Compile Include="FuncionarioGL.cs" />
+    <Compile Include="HorarioGL.cs" />
+    <Compile Include="MechTechAtivaGL.cs" />
+    <Compile Include="MechTechEmpresaGL.cs" />
+    <Compile Include="MunicipioGL.cs" />
+    <Compile Include="NaturezaJuridicaGL.cs" />
+    <Compile Include="OrcamentoGL.cs" />
+    <Compile Include="PerfilGL.cs" />
+    <Compile Include="PorteGL.cs" />
+    <Compile Include="ProdutoServicoGL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Proxy\CBOBO.cs" />
+    <Compile Include="ResponsavelGL.cs" />
+    <Compile Include="RotinaGL.cs" />
+    <Compile Include="SalarioTipoGL.cs" />
+    <Compile Include="SecaoGL.cs" />
+    <Compile Include="SetorGL.cs" />
+    <Compile Include="UFGL.cs" />
+    <Compile Include="UsuarioGL.cs" />
+    <Compile Include="UsuarioPerfilGL.cs" />
+    <Compile Include="UsuarioRotinaGL.cs" />
+    <Compile Include="VeiculoGL.cs" />
+    <Compile Include="VincularVeiculoGL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Business\MechTech.Business.csproj">
+      <Project>{8ff99fc7-4eca-4ddb-aaec-1f37411bd2ad}</Project>
+      <Name>MechTech.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entities\MechTech.Entities.csproj">
+      <Project>{93ac343f-e837-4d66-bcb4-effb0a4b4a81}</Project>
+      <Name>MechTech.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Interfaces\MechTech.Interfaces.csproj">
+      <Project>{e3df1041-4f4c-4680-8cb5-9927ac21832e}</Project>
+      <Name>MechTech.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Util\MechTech.Util.csproj">
+      <Project>{18299a7d-bd31-4869-8464-55b8db033676}</Project>
+      <Name>MechTech.Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

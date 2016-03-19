@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E42C925E-6DC9-4B51-9979-C02F69D08AAD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MechTech.UI.Vendas</RootNamespace>
+    <AssemblyName>MechTech.UI.Vendas</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v14.1.Core, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v14.1.Core, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v14.1.Core, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v14.1.Core, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v14.1.Core, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v14.1.Core, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v14.1.Wizard, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v14.1.Core, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v14.1.UI, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v14.1.Extensions, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmGridOrcamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGridOrcamento.Designer.cs">
+      <DependentUpon>frmGridOrcamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLancamentoProdServ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLancamentoProdServ.Designer.cs">
+      <DependentUpon>frmLancamentoProdServ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpdateOrcamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdateOrcamento.Designer.cs">
+      <DependentUpon>frmUpdateOrcamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\rptOrdemServico.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptOrdemServico.Designer.cs">
+      <DependentUpon>rptOrdemServico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptProdutosServicos.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptProdutosServicos.Designer.cs">
+      <DependentUpon>rptProdutosServicos.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmGridOrcamento.resx">
+      <DependentUpon>frmGridOrcamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLancamentoProdServ.resx">
+      <DependentUpon>frmLancamentoProdServ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpdateOrcamento.resx">
+      <DependentUpon>frmUpdateOrcamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Reports\rptOrdemServico.resx">
+      <DependentUpon>rptOrdemServico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptProdutosServicos.resx">
+      <DependentUpon>rptProdutosServicos.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\DataSources\MechTech.Entities.FuncionarioSEDTO.datasource" />
+    <None Include="Properties\DataSources\MechTech.Entities.LancamentoProdutoServicoDTO.datasource" />
+    <None Include="Properties\DataSources\MechTech.Entities.OrcamentoDTO.datasource" />
+    <None Include="Properties\DataSources\MechTech.Entities.OrcamentoProdutoServicoDTO.datasource" />
+    <None Include="Properties\DataSources\MechTech.Entities.ProdutoServicoDTO.datasource" />
+    <None Include="Properties\DataSources\MechTech.Util.Rotina.datasource" />
+    <None Include="Properties\DataSources\PlacaVeiculoDTO.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Business\MechTech.Business.csproj">
+      <Project>{8ff99fc7-4eca-4ddb-aaec-1f37411bd2ad}</Project>
+      <Name>MechTech.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Data\MechTech.Data.csproj">
+      <Project>{e836081d-da27-424c-a870-3db0353e6da4}</Project>
+      <Name>MechTech.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Entities\MechTech.Entities.csproj">
+      <Project>{93ac343f-e837-4d66-bcb4-effb0a4b4a81}</Project>
+      <Name>MechTech.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Gateway\MechTech.Gateway.csproj">
+      <Project>{87fea72b-12d3-4a21-8740-c7f8d655cc7d}</Project>
+      <Name>MechTech.Gateway</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Interfaces\MechTech.Interfaces.csproj">
+      <Project>{e3df1041-4f4c-4680-8cb5-9927ac21832e}</Project>
+      <Name>MechTech.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Util\MechTech.Util.csproj">
+      <Project>{18299a7d-bd31-4869-8464-55b8db033676}</Project>
+      <Name>MechTech.Util</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cadastros\MechTech.UI.Cadastros.csproj">
+      <Project>{ce872692-42ba-4862-abb9-918cad2e6169}</Project>
+      <Name>MechTech.UI.Cadastros</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utilitarios\MechTech.UI.Utilitarios.csproj">
+      <Project>{589a117a-0293-4a85-a530-3c71047f525e}</Project>
+      <Name>MechTech.UI.Utilitarios</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

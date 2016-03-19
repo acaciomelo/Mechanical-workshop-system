@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E836081D-DA27-424C-A870-3DB0353E6DA4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MechTech.Data</RootNamespace>
+    <AssemblyName>MechTech.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Devart.Data.PostgreSql, Version=6.8.322.0, Culture=neutral, PublicKeyToken=09af7300eec23701, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\Devart\dotConnect\PostgreSQL\Devart.Data.PostgreSql.dll</HintPath>
+    </Reference>
+    <Reference Include="devart.data.postgresql.enterpriselibrary">
+      <HintPath>..\MechTech\DLLS\devart.data.postgresql.enterpriselibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data">
+      <HintPath>..\MechTech\DLLS\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AtivacaoDAO.cs" />
+    <Compile Include="BackupDAO.cs" />
+    <Compile Include="BancoDAO.cs" />
+    <Compile Include="BuscaCEPDAO.cs" />
+    <Compile Include="CategoriaProdutoDAO.cs" />
+    <Compile Include="CBODAO.cs" />
+    <Compile Include="ClassifTributariaDAO.cs" />
+    <Compile Include="ClienteDAO.cs" />
+    <Compile Include="CNAEDAO.cs" />
+    <Compile Include="DatabaseStructureCoreDAO.cs" />
+    <Compile Include="DatabaseStructureDAO.cs" />
+    <Compile Include="DepartamentoDAO.cs" />
+    <Compile Include="EmpresaDAO.cs" />
+    <Compile Include="EstruturaFuncaoDAO.cs" />
+    <Compile Include="EstruturaObjetoDAO.cs" />
+    <Compile Include="EstruturaTabelaDAO.cs" />
+    <Compile Include="FAPDAO.cs" />
+    <Compile Include="FeriadoDAO.cs" />
+    <Compile Include="FilialDAO.cs" />
+    <Compile Include="FornecedorDAO.cs" />
+    <Compile Include="FPASDAO.cs" />
+    <Compile Include="FuncaoDAO.cs" />
+    <Compile Include="FuncContratoDAO.cs" />
+    <Compile Include="FuncDocumentoDAO.cs" />
+    <Compile Include="FuncionarioDAO.cs" />
+    <Compile Include="FuncSalarioDAO.cs" />
+    <Compile Include="GPSPagamentoDAO.cs" />
+    <Compile Include="HorarioDAO.cs" />
+    <Compile Include="HorarioSemanaDAO.cs" />
+    <Compile Include="LancamentoProdutoServicoDAO.cs" />
+    <Compile Include="MechTechAtivaDAO.cs" />
+    <Compile Include="MechTechEmpresaDAO.cs" />
+    <Compile Include="MunicipioDAO.cs" />
+    <Compile Include="NaturezaJuridicaDAO.cs" />
+    <Compile Include="OrcamentoDAO.cs" />
+    <Compile Include="PerfilDAO.cs" />
+    <Compile Include="PerfilRotinaDAO.cs" />
+    <Compile Include="PorteDAO.cs" />
+    <Compile Include="ProdutoServicoDAO.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResponsavelDAO.cs" />
+    <Compile Include="RotinaDAO.cs" />
+    <Compile Include="SalarioTipoDAO.cs" />
+    <Compile Include="SecaoDAO.cs" />
+    <Compile Include="SetorDAO.cs" />
+    <Compile Include="SimplesDAO.cs" />
+    <Compile Include="Transaction.cs" />
+    <Compile Include="UFDAO.cs" />
+    <Compile Include="UsuarioDAO.cs" />
+    <Compile Include="UsuarioPerfilDAO.cs" />
+    <Compile Include="UsuarioRotinaDAO.cs" />
+    <Compile Include="VeiculoDAO.cs" />
+    <Compile Include="VersaoDAO.cs" />
+    <Compile Include="VincularVeiculoDAO.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entities\MechTech.Entities.csproj">
+      <Project>{93ac343f-e837-4d66-bcb4-effb0a4b4a81}</Project>
+      <Name>MechTech.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Interfaces\MechTech.Interfaces.csproj">
+      <Project>{e3df1041-4f4c-4680-8cb5-9927ac21832e}</Project>
+      <Name>MechTech.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Util\MechTech.Util.csproj">
+      <Project>{18299a7d-bd31-4869-8464-55b8db033676}</Project>
+      <Name>MechTech.Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{93AC343F-E837-4D66-BCB4-EFFB0A4B4A81}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MechTech.Entities</RootNamespace>
+    <AssemblyName>MechTech.Entities</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbstractClasses\Identificador.cs" />
+    <Compile Include="AtivacaoDTO.cs" />
+    <Compile Include="BackupDTO.cs" />
+    <Compile Include="BancoDTO.cs" />
+    <Compile Include="BuscaCEPDTO.cs" />
+    <Compile Include="CategoriaProdutoDTO.cs" />
+    <Compile Include="CBODTO.cs" />
+    <Compile Include="ClassifTributariaDTO.cs" />
+    <Compile Include="ClienteDTO.cs" />
+    <Compile Include="CNAEDTO.cs" />
+    <Compile Include="ConexoesDTO.cs" />
+    <Compile Include="CpArqDbDTO.cs" />
+    <Compile Include="DatabaseStructureDTO.cs" />
+    <Compile Include="DepartamentoDTO.cs" />
+    <Compile Include="EmpresaDTO.cs" />
+    <Compile Include="EstruturaFuncaoDTO.cs" />
+    <Compile Include="EstruturaObjetoDTO.cs" />
+    <Compile Include="EstruturaTabelaDTO.cs" />
+    <Compile Include="FAPDTO.cs" />
+    <Compile Include="FeriadoDTO.cs" />
+    <Compile Include="FilialDTO.cs" />
+    <Compile Include="FormaRecebimentoDTO.cs" />
+    <Compile Include="FornecedorDTO.cs" />
+    <Compile Include="FPASDTO.cs" />
+    <Compile Include="FuncaoDTO.cs" />
+    <Compile Include="FuncContratoDTO.cs" />
+    <Compile Include="FuncDocumentoDTO.cs" />
+    <Compile Include="FuncionarioDTO.cs" />
+    <Compile Include="FuncionarioSEDTO.cs" />
+    <Compile Include="FuncPesquisaDTO.cs" />
+    <Compile Include="FuncSalarioDTO.cs" />
+    <Compile Include="GPSPagamentoDTO.cs" />
+    <Compile Include="HorarioDTO.cs" />
+    <Compile Include="HorarioSemanaDTO.cs" />
+    <Compile Include="LancamentoProdutoServicoDTO.cs" />
+    <Compile Include="MechTechAtivaDTO.cs" />
+    <Compile Include="MechTechEmpresaDTO.cs" />
+    <Compile Include="MunicipioDTO.cs" />
+    <Compile Include="NaturezaJuridicaDTO.cs" />
+    <Compile Include="OrcamentoDTO.cs" />
+    <Compile Include="OrcamentoProdutoServicoDTO.cs" />
+    <Compile Include="PerfilDTO.cs" />
+    <Compile Include="PerfilRotinaDTO.cs" />
+    <Compile Include="PorteDTO.cs" />
+    <Compile Include="ProdutoServicoDTO.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResponsavelDTO.cs" />
+    <Compile Include="RotinaDTO.cs" />
+    <Compile Include="SalarioTipoDTO.cs" />
+    <Compile Include="SecaoDTO.cs" />
+    <Compile Include="SetorDTO.cs" />
+    <Compile Include="SimplesDTO.cs" />
+    <Compile Include="UFDTO.cs" />
+    <Compile Include="UsuarioDTO.cs" />
+    <Compile Include="UsuarioPerfilDTO.cs" />
+    <Compile Include="UsuarioRotinaDTO.cs" />
+    <Compile Include="VeiculoDTO.cs" />
+    <Compile Include="VincularVeiculoDTO.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Util\MechTech.Util.csproj">
+      <Project>{18299a7d-bd31-4869-8464-55b8db033676}</Project>
+      <Name>MechTech.Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Constants\Cadastros\" />
+    <Folder Include="Constants\Vendas\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

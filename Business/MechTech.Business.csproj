@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8FF99FC7-4ECA-4DDB-AAEC-1F37411BD2AD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MechTech.Business</RootNamespace>
+    <AssemblyName>MechTech.Business</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AtivacaoBO.cs" />
+    <Compile Include="BackupBO.cs" />
+    <Compile Include="BancoBO.cs" />
+    <Compile Include="BuscaCEPBO.cs" />
+    <Compile Include="Calculos\CalculaOrcamento.cs" />
+    <Compile Include="Calculos\CalculoBase.cs" />
+    <Compile Include="Calculos\Orcamento.cs" />
+    <Compile Include="CategoriaProdutoBO.cs" />
+    <Compile Include="CBOBO.cs" />
+    <Compile Include="ClassifTributariaBO.cs" />
+    <Compile Include="ClienteBO.cs" />
+    <Compile Include="CNAEBO.cs" />
+    <Compile Include="Contracts\ICBOBO.cs" />
+    <Compile Include="DatabaseStructureBO.cs" />
+    <Compile Include="DatabaseStructureCoreBO.cs" />
+    <Compile Include="DepartamentoBO.cs" />
+    <Compile Include="EmpresaBO.cs" />
+    <Compile Include="EstruturaFuncaoBO.cs" />
+    <Compile Include="EstruturaObjetoBO.cs" />
+    <Compile Include="EstruturaTabelaBO.cs" />
+    <Compile Include="FeriadoBO.cs" />
+    <Compile Include="FilialBO.cs" />
+    <Compile Include="FornecedorBO.cs" />
+    <Compile Include="FuncaoBO.cs" />
+    <Compile Include="FuncionarioBO.cs" />
+    <Compile Include="HorarioBO.cs" />
+    <Compile Include="MechTechAtivaBO.cs" />
+    <Compile Include="MechTechEmpresaBO.cs" />
+    <Compile Include="MunicipioBO.cs" />
+    <Compile Include="NaturezaJuridicaBO.cs" />
+    <Compile Include="OrcamentoBO.cs" />
+    <Compile Include="PerfilBO.cs" />
+    <Compile Include="PorteBO.cs" />
+    <Compile Include="ProdutoServicoBO.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResponsavelBO.cs" />
+    <Compile Include="RotinaBO.cs" />
+    <Compile Include="SalarioTipoBO.cs" />
+    <Compile Include="SecaoBO.cs" />
+    <Compile Include="SetorBO.cs" />
+    <Compile Include="UFBO.cs" />
+    <Compile Include="UsuarioBO.cs" />
+    <Compile Include="UsuarioPerfilBO.cs" />
+    <Compile Include="UsuarioRotinaBO.cs" />
+    <Compile Include="VeiculoBO.cs" />
+    <Compile Include="VersaoBO.cs" />
+    <Compile Include="VincularVeiculoBO.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Data\MechTech.Data.csproj">
+      <Project>{e836081d-da27-424c-a870-3db0353e6da4}</Project>
+      <Name>MechTech.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entities\MechTech.Entities.csproj">
+      <Project>{93ac343f-e837-4d66-bcb4-effb0a4b4a81}</Project>
+      <Name>MechTech.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Interfaces\MechTech.Interfaces.csproj">
+      <Project>{e3df1041-4f4c-4680-8cb5-9927ac21832e}</Project>
+      <Name>MechTech.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Util\MechTech.Util.csproj">
+      <Project>{18299a7d-bd31-4869-8464-55b8db033676}</Project>
+      <Name>MechTech.Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
